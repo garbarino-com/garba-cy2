@@ -11,8 +11,11 @@ describe('Hacer una compra en Garbarino', function(){
         return true;
     });
 
-    it('Ingresar a la web', function(){          
+    it('Ingresar a la web', function(){
         cy.visit('')
+        Cypress.Cookies.defaults({
+        whitelist: "cartId"
+      })
     })
 
     it('Realizar la búsqueda de "Heladeras"', function(){
@@ -38,5 +41,3 @@ describe('Hacer una compra en Garbarino', function(){
 
     })
 })
-
-
