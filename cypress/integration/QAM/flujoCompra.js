@@ -1,4 +1,4 @@
-describe('Hacer una compra en Garbarino', function(){
+describe('Realizar una compra en Garbarino.com de una Heladera con retiro en sucusal y tarjeta de débito', function(){
         //Prevenir los errores propios de la web de Garbarino ej: Uncaught TypeError: Cannot read property 'registration' of undefined
         Cypress.on('uncaught:exception', (err) => {
         // returning false here prevents Cypress from
